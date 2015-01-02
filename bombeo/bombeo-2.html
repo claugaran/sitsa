@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<!-- Basic Page Needs
+  ================================================== -->
+  <meta charset="utf-8">
+  <title>Sitsa - App</title>
+  <meta name="description" content="Catalogo de productos de SITSA">
+  <meta name="author" content="">
+<!-- CSS
+  ================================================== -->
+  <!-- Bootstrap  -->
+  <link type="text/css" rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+	<div id="content">
+		<img src="../img/5-bombeo/cover-bombeo-2.jpg" class="cover-page cover-productos"/>
+		<a href="../5-bombeo.html"><div class="boton-regresar">&nbsp;</div></a>
+		<a><div class="boton-descripcion">&nbsp;</div></a>
+		<a><div class="boton-mas-info bombeo2" id="info1">&nbsp;</div></a>
+		<a><div class="boton-mas-info bombeo2" id="info2">&nbsp;</div></a>
+		<a><div class="boton-mas-info bombeo2" id="info3">&nbsp;</div></a>
+		<a><div class="boton-mas-info bombeo2" id="info4">&nbsp;</div></a>
+		<div class="info-descripcion">
+			<div class="descripcion">
+				<img src="../img/5-bombeo/info-bombeo-2.jpg" class="cover-descripcion"/>
+				<div class="boton-regresar-info">&nbsp;</div>
+			</div>
+		</div>
+		<div class="info-caracteristicas">
+			<div class="caracteristicas-container">
+				<img src="../img/5-bombeo/info-bombeo-2-1.jpg" class="caracteristicas" id="caracteristica1"/>
+				<img src="../img/5-bombeo/info-bombeo-2-2.jpg" class="caracteristicas" id="caracteristica2"/>
+				<img src="../img/5-bombeo/info-bombeo-2-3.jpg" class="caracteristicas" id="caracteristica3"/>
+				<img src="../img/5-bombeo/info-bombeo-2-4.jpg" class="caracteristicas" id="caracteristica4"/>
+				<div class="boton-caracteristicas-cerrar">
+				  &nbsp;
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+<script src="../js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" charset="utf-8">
+	$(window).load(function(){
+		
+		
+		/*Ajuste de ancho de página para diversos dispositivos*/
+	    $('#content').width( $('.cover-page').width());
+	  	
+	  	/*Función para mostrar desccripción de producto*/
+	    $('.boton-descripcion').click(function() {
+	        $('.info-descripcion').addClass('show');
+	        //$('.info-descripcion').fadeIn();
+	        $('.cover-productos').addClass('obscurecer');
+	    });
+	    
+	    /*Función para regresar de la desccripción de producto*/
+	    $('.boton-regresar-info').click(function() {
+	        $('.info-descripcion').removeClass('show');
+	        //$('.info-descripcion').fadeOut();
+	        $('.cover-productos').removeClass('obscurecer');
+	    });
+	    
+	    $('.cover-productos').click(function() {
+	        $('.info-descripcion').removeClass('show');
+	        $('.cover-productos').removeClass('obscurecer');
+	    });
+	    
+	    /*Función para mostrar caracteristica del producto*/
+	    $('.boton-mas-info').click(function() {
+	    	var id = $(this).attr('id').replace(/info/, '');
+	    	$('#caracteristica' +id ).addClass('show');
+	    	$('.boton-caracteristicas-cerrar').addClass('show');
+	    });
+	    
+	    $('.boton-caracteristicas-cerrar').click(function() {
+	        $('.caracteristicas').removeClass('show');
+	        $('.boton-caracteristicas-cerrar').removeClass('show');
+	    });
+	    
+	});
+</script>
+
+</html>

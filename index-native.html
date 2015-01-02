@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="msapplication-tap-highlight" content="no" />
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+
+<!-- Basic Page Needs
+  ================================================== -->
+  <title>Sitsa - App</title>
+  <meta name="description" content="Catalogo de productos de SITSA">
+  <meta name="author" content="">
+<!-- CSS
+  ================================================== -->
+  <!-- Bootstrap  -->
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  
+  <!-- Icon  -->
+  <link rel="shortcut icon" type="image/png" href="icon.png">
+  
+</head>
+<body>
+	<div id="content">
+		<img src="img/intro.jpg" class="cover-page"/>
+		<a href="categorias.html">
+			<div class="boton-entrar">&nbsp;</div>
+		</a>
+	</div>
+</body>
+
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" charset="utf-8">
+	 $(window).load(function(){
+		/*Ajuste de ancho de página para diversos dispositivos*/
+	    $('#content').width( $('.cover-page').width());
+	});
+</script>
+</html>

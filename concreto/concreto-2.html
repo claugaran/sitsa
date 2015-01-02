@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<!-- Basic Page Needs
+  ================================================== -->
+  <meta charset="utf-8">
+  <title>Sitsa - App</title>
+  <meta name="description" content="Catalogo de productos de SITSA">
+  <meta name="author" content="">
+<!-- CSS
+  ================================================== -->
+  <!-- Bootstrap  -->
+  <link type="text/css" rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+	<div id="content">
+		<img src="../img/3-concreto/cover-bombasestacionarias-1.jpg" class="cover-page cover-productos"/>
+		<a href="../3-concreto.html">
+			<div class="boton-regresar">&nbsp;</div>
+		</a>
+		<a>
+			<div class="boton-descripcion">&nbsp;</div>
+		</a>
+		<div class="info-descripcion">
+			<div class="descripcion">
+				<img src="../img/3-concreto/info-bombaestacionaria-1.jpg" class="cover-descripcion"/>
+				<div class="boton-regresar-info">&nbsp;</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+<script src="../js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" charset="utf-8">
+	$(window).load(function(){
+		
+		
+		/*Ajuste de ancho de página para diversos dispositivos*/
+	    $('#content').width( $('.cover-page').width());
+	  	
+	  	/*Función para mostrar desccripción de producto*/
+	    $('.boton-descripcion').click(function() {
+	        $('.info-descripcion').addClass('show');
+	        //$('.info-descripcion').fadeIn();
+	        $('.cover-productos').addClass('obscurecer');
+	    });
+	    
+	    /*Función para regresar de la desccripción de producto*/
+	    $('.boton-regresar-info').click(function() {
+	        $('.info-descripcion').removeClass('show');
+	        //$('.info-descripcion').fadeOut();
+	        $('.cover-productos').removeClass('obscurecer');
+	    });
+	    
+	    $('.cover-productos').click(function() {
+	        $('.info-descripcion').removeClass('show');
+	        $('.cover-productos').removeClass('obscurecer');
+	    });
+	});
+</script>
+
+</html>

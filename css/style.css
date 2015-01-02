@@ -1,0 +1,281 @@
+body {
+	
+    background-color: black;
+    margin: 0px;
+}
+
+#content {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	max-width: 1024px;
+    max-height: 768px;
+    margin-left: auto;
+    margin-right: auto;
+   	overflow: hidden;
+}
+
+.cover-page {
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto:
+}
+
+
+/*Intro*/
+.boton-entrar {
+	position: absolute;
+	top: 59.3%;
+	left: 90%;
+	width: 8%;
+	height: 10.3%;
+}
+
+/*Menú categorías*/
+.menu-categorias {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 73%;
+	height: 100%;
+}
+
+.categorias {
+	position: relative;
+	height: 100%;
+}
+
+.boton-categoria {
+	width: 100%;
+	height: 12.36%;
+}
+
+/*General*/
+.boton-regresar {
+	position: absolute;
+	top: 4.325%;
+	left: 88.8%;
+	width: 8%;
+	height: 10.5%;
+	z-index: 10;
+}
+
+.scroll .boton-regresar {
+	left: 90.2%;
+}
+
+.scroll {
+	overflow-y: scroll !important;
+	overflow-x: hidden;
+}
+
+/*Menú productos*/
+.boton-maquinas-categoria {
+	position: absolute;
+	top: 30.825%;
+	left: 9.3%;
+	width: 19%;
+	height: 8.2%;
+	z-index: 10;
+}
+
+.boton-descripcion-categoria {
+	position: absolute;
+	top: 30.825%;
+	left: 30.4%;
+	width: 19%;
+	height: 8.2%;
+	z-index: 10;
+}
+
+.menu-productos {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+}
+
+.show {
+	display: block;
+}
+
+.hide {
+	display: none;
+}
+
+.productos {
+	position: relative;
+	margin-left: 9.375%;
+	margin-top: 38%;
+	height: 100%;
+}
+
+.boton-producto {
+	width: 21.21%;
+	height: 25.75%;
+	margin-right: 2%;
+	margin-bottom: 1.1%;
+	float: left;
+}
+
+#productos-bombas {
+	margin-top: 32.7%;
+}
+
+/*Productos*/
+.cover-productos.obscurecer {
+	opacity: .5;
+}
+
+.boton-descripcion {
+	position: absolute;
+	top: 16.625%;
+	left: 88.8%;
+	width: 8%;
+	height: 10.5%;
+	z-index: 10;
+}
+
+.boton-mas-info {
+	position: absolute;
+	width: 5.6%;
+	height: 8%;
+	z-index: 10;
+}
+
+.bombeo2#info1 {top: 28%; 	left: 65.5%;}
+.bombeo2#info2 {top: 62.6%; left: 86.2%;}
+.bombeo2#info3 {top: 72.8%; left: 53.1%;}
+.bombeo2#info4 {top: 82.8%; left: 77.9%;}
+
+.info-descripcion {
+	position: absolute;
+	left: 100%;
+	top: 0px;
+	-webkit-transition: left .7s; /* For Safari 3.1 to 6.0 */
+    transition: left .7s;
+    z-index: 50;
+}
+
+.info-descripcion.show {
+	left: 0%;
+}
+
+.cover-descripcion {
+	width: 100%;
+	height: 100%;
+}
+
+.descripcion {
+	position: relative;
+	width: 100%;
+}
+
+.boton-regresar-info {
+	position: absolute;
+	top: 4.42%;
+	right: 3.32%;
+	width: 6%;
+	min-width: 50px;
+	height: 7.6%;
+	min-height: 50px;
+	z-index: 10;
+}
+
+.info-caracteristicas {
+	position: absolute;
+	width:100%;
+	height: 100%;
+	left: 0%;
+	top: 0px;
+}
+
+.caracteristicas-container{
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+
+.caracteristicas {
+	position: absolute;
+	width: 0%;
+	height: 0%;
+	top: 50%;
+	right: 50%;
+	-webkit-transition: width .7s, height .7s, top .7s, right .7s; /* For Safari 3.1 to 6.0 */
+    transition: width .7s, height .7s, top .7s, right .7s;
+	z-index: 30;
+}
+
+.caracteristicas.show {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	right: 0%;
+}
+
+.boton-caracteristicas-cerrar {
+	position: absolute;
+	top: 4.4%;
+	right: 3.32%;
+	width: 6%;
+	height: 7.6%;
+	z-index: 100;
+	display: none;
+}
+
+.boton-caracteristicas-cerrar.show {
+	display: block;
+}
+
+.boton-regresar.refacciones {
+	top: 4.4%;
+	left: 92.2%;
+	width: 6%;
+	height: 7.6%;
+}
+
+#productos-trituracion {margin-top: 29%;}
+
+#productos-maniobras {margin-top: 29%;}
+
+#productos-concreto {margin-top: 29%;}
+
+#productos-carga {margin-top: 29%;}
+
+#productos-cimentaciones {margin-top: 29%;}
+
+.boton-siguiente {
+	position: absolute;
+	top: 39.3%;
+	left: 79%;
+	width: 21%;
+	height: 10.28%;
+	z-index: 10;
+}
+
+.boton-home {
+	position: absolute;
+	top: 63.5%;
+	left: 9.7%;
+	width: 8%;
+	height: 10.7%;
+}
+
+.boton-nosotros {
+	position: absolute;
+	top: 75.5%;
+	left: 9.7%;
+	width: 8%;
+	height: 10.7%;
+}
+
+.boton-que-hacemos {
+	position: absolute;
+	top: 87.7%;
+	left: 9.7%;
+	width: 8%;
+	height: 10.7%;
+}
+
